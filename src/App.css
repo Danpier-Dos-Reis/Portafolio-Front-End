@@ -1,0 +1,273 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  height: 150px;
+  display: inline-flex;
+}
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+header .main_menu {
+  margin-left: 1cm;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: 10px;
+}
+header .main_menu p {
+  margin-top: 1cm;
+  font-size: 40px;
+  font-weight: bold;
+}
+header .main_menu .links_container {
+  margin-top: 0.5cm;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin-bottom: 0.5cm;
+}
+header .main_menu .links_container a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gray;
+}
+header .main_menu .links_container a:hover {
+  transition-duration: 0.5s;
+  color: #10375C;
+}
+
+.links_container a:nth-child(n+2) {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 1050px) {
+  .main_section {
+    width: 70%;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .main_menu {
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  header .main_menu p {
+    margin-top: 0.5cm;
+  }
+  header .main_menu .links_container {
+    margin: 0.5cm 0 0 0;
+    justify-content: center;
+  }
+  .links_container a:nth-child(n+2) {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main_menu .links_container a:nth-child(n) {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main_menu .links_container a:nth-child(n) {
+    font-size: 12px;
+  }
+}
+.presentation_card {
+  margin-top: 1cm;
+  background: #F4F6FF;
+  width: 100%;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.219);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentation_card p:first-child {
+  width: 90%;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 1cm 0 1cm 5%;
+}
+
+.presentation_card p:nth-child(2) {
+  width: 80%;
+  font-size: 25px;
+  margin: 0 0 1cm 5%;
+}
+.presentation_card p:nth-child(2) a {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.underline_blue {
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+.underline_red {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+.underline_darkblue {
+  text-decoration: underline;
+  text-decoration-color: #10375C;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+@media screen and (max-width: 1050px) {
+  .presentation_card {
+    margin-top: 3.5cm;
+  }
+}
+@media screen and (max-width: 834px) {
+  .presentation_card p:first-child {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .presentation_card p:first-child {
+    font-size: 27px;
+  }
+  .presentation_card p:nth-child(2) {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .underline_blue {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+  .underline_red {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+  .underline_darkblue {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+}
+.github_codes {
+  width: 100%;
+  margin-top: 1.6cm;
+}
+.github_codes .ti_code p {
+  font-size: 45px;
+}
+.github_codes .cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.github_codes .cards_container .project_card {
+  margin: 0.5cm 0 1cm 0;
+  background: #F4F6FF;
+  border: solid 0.5px gray;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
+  border-radius: 15px;
+  width: 30%;
+  height: 320px;
+}
+.github_codes .cards_container .project_card p:first-child {
+  margin: 1cm 0 0.3cm 10%;
+  font-weight: bold;
+}
+.github_codes .cards_container .project_card p, .github_codes .cards_container .project_card a {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 16px;
+}
+.github_codes .cards_container .project_card .programming_languages {
+  margin: 0.8cm 0 1cm 0;
+  border-top: solid 1px gray;
+}
+.github_codes .cards_container .project_card .cont_circles {
+  width: 90%;
+  margin: 10% 10% 10% 10%;
+  display: flex;
+}
+.github_codes .cards_container .project_card .cont_circles div {
+  border-radius: 50%;
+  border: solid 1.5px black;
+  width: 16px;
+  height: 16px;
+}
+.github_codes .cards_container .project_card .cont_circles p {
+  font-size: 14px;
+  margin: 0 10px 0 4px;
+  width: fit-content;
+}
+
+.home_articles {
+  width: 100%;
+  margin-top: 1.6cm;
+}
+.home_articles .ti_articles p {
+  font-size: 45px;
+  margin-bottom: 0.5cm;
+}
+.home_articles .arts_container {
+  border-bottom: solid 2.5px gray;
+  font-size: 19px;
+  padding-bottom: 60px;
+}
+.home_articles .arts_container .ti_article {
+  font-size: 35px;
+  text-decoration: none;
+}
+.home_articles .arts_container div {
+  font-size: 22px;
+  margin: 0.6cm 0 0.6cm 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home_articles .arts_container div .type_article {
+  border-radius: 30%;
+  border: solid 1px black;
+  font-size: 18px;
+  padding: 5px;
+  margin-right: 0.4cm;
+  padding: 5px;
+}
+.home_articles .arts_container div .date_article {
+  font-style: italic;
+  color: rgb(95, 94, 94);
+  padding: 5px;
+}
+.home_articles .arts_container .art_resume {
+  width: 97%;
+  margin-bottom: 0.7cm;
+}
+.home_articles .arts_container .art_calltoread {
+  text-decoration: none;
+  color: #0000EE;
+}
+
+.main_section {
+  margin: 1cm auto 1.7cm auto;
+  width: 60%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1050px) {
+  .main_section {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main_section {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

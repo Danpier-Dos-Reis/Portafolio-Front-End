@@ -1,0 +1,62 @@
+@use '../../assets/colors';
+
+.github_codes{
+    width: 100%;
+    margin-top: 1.6cm;
+
+    .ti_code{
+        p{
+            font-size: 45px;
+        }
+    }
+
+    .cards_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .project_card{
+            margin: 0.5cm 0 1cm 0;
+            background: colors.$white;
+            border: solid 0.5px gray;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
+            border-radius: 15px;
+            width: 30%; height: 320px;
+
+            p:first-child{
+                margin: 1cm 0 0.3cm 10%;
+                font-weight: bold;
+            }
+
+            p , a{
+                width: 80%;
+                margin-left: 10%;
+                font-size: 16px;
+            }
+
+            .programming_languages{
+                margin: 0.8cm 0 1cm 0;
+                border-top: solid 1px gray;
+            }
+
+            .cont_circles{
+                width: 90%;
+                margin: 10% 10% 10% 10%;
+                display: flex;
+                
+                div{
+                    border-radius: 50%;
+                    border: solid 1.5px black;
+                    width: 16px; height: 16px;
+                }
+
+                p{
+                    font-size: 14px;
+                    margin: 0 10px 0 4px;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+}
