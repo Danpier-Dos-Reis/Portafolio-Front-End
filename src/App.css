@@ -9,14 +9,16 @@ header img {
   border-radius: 50%;
 }
 header .main_menu {
-  margin-left: 1cm;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: 10px;
+  justify-content: center;
+  margin-left: 0.7cm;
 }
-header .main_menu p {
-  margin-top: 1cm;
+header .main_menu .myname {
+  text-decoration: none;
+  margin-top: 1.5cm;
   font-size: 40px;
   font-weight: bold;
 }
@@ -25,13 +27,13 @@ header .main_menu .links_container {
   width: 100%;
   display: flex;
   align-items: baseline;
-  justify-content: space-evenly;
   margin-bottom: 0.5cm;
 }
 header .main_menu .links_container a {
   text-decoration: none;
   font-size: 18px;
   color: gray;
+  font-weight: bold;
 }
 header .main_menu .links_container a:hover {
   transition-duration: 0.5s;
@@ -39,10 +41,10 @@ header .main_menu .links_container a:hover {
 }
 
 .links_container a:nth-child(n+2) {
-  margin-left: 10%;
+  margin-left: 6%;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1024px) {
   .main_section {
     width: 70%;
   }
@@ -54,6 +56,9 @@ header .main_menu .links_container a:hover {
     align-items: center;
     margin-left: 0;
     width: 100%;
+  }
+  header .main_menu .myname {
+    margin-top: 7px;
   }
   header .main_menu p {
     margin-top: 0.5cm;
@@ -175,7 +180,7 @@ header .main_menu .links_container a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
   border-radius: 15px;
   width: 30%;
-  height: 320px;
+  height: 380px;
 }
 .github_codes .cards_container .project_card p:first-child {
   margin: 1cm 0 0.3cm 10%;
@@ -187,26 +192,61 @@ header .main_menu .links_container a:hover {
   font-size: 16px;
 }
 .github_codes .cards_container .project_card .programming_languages {
-  margin: 0.8cm 0 1cm 0;
+  margin: 0.4cm 0 0 0;
   border-top: solid 1px gray;
 }
 .github_codes .cards_container .project_card .cont_circles {
   width: 90%;
-  margin: 10% 10% 10% 10%;
+  margin: 10% 0 10% 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  row-gap: 10px;
+  padding-left: 7%;
 }
-.github_codes .cards_container .project_card .cont_circles div {
+.github_codes .cards_container .project_card .cont_circles .cir {
+  display: inline-flex;
+}
+.github_codes .cards_container .project_card .cont_circles .cir div {
   border-radius: 50%;
   border: solid 1.5px black;
   width: 16px;
   height: 16px;
 }
-.github_codes .cards_container .project_card .cont_circles p {
+.github_codes .cards_container .project_card .cont_circles .cir p {
   font-size: 14px;
   margin: 0 10px 0 4px;
   width: fit-content;
 }
 
+@media screen and (max-width: 1366px) {
+  .project_card {
+    min-height: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .project_card {
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 834px) {
+  .cards_container {
+    flex-direction: column;
+  }
+  .cards_container .project_card {
+    min-width: 250px;
+    min-height: 150px;
+  }
+}
 .home_articles {
   width: 100%;
   margin-top: 1.6cm;
@@ -255,7 +295,7 @@ header .main_menu .links_container a:hover {
 
 .main_section {
   margin: 1cm auto 1.7cm auto;
-  width: 60%;
+  width: 70%;
   padding-bottom: 5%;
 }
 

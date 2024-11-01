@@ -11,11 +11,11 @@ function Github_Codes() {
                 <br/><br/>
                 <a href="#github_project1">Ver Repo</a>
                 <div className="programming_languages">
-                <div className="cont_circles">
-                        <div></div><p>php</p>
-                        <div></div><p>javascript</p>
-                        <div></div><p>react</p>
-                        <div></div><p>html</p>
+                    <div className="cont_circles">
+                        <div className="cir"><div></div><p>php</p></div>
+                        <div className="cir"><div></div><p>javasvript</p></div>
+                        <div className="cir"><div></div><p>react</p></div>
+                        <div className="cir"><div></div><p>html</p></div>
                     </div>
                 </div>
             </div>

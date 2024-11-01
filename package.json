@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev" : "vite",
-    "build" : "tsc -b && vite build",
-    "lint" : "eslint .",
-    "preview" : "vite preview",
-    "bStyles" : "sass --watch src/App.scss src/App.css"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "bStyles": "sass --watch src/App.scss src/App.css"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "sass": "^1.80.3"
   },
   "devDependencies": {
