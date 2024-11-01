@@ -1,13 +1,24 @@
-import Main_Header from '../header/header_component';
+import "./projects.css"
 
 function Projects() {
 
   return (
-    <section className='main_section'>
-      <Main_Header image_link='https://raw.githubusercontent.com/Danpier-Dos-Reis/Portafolio-Front-End/refs/heads/main/src/assets/Photos/perfil_portfolio.png' />
-      <br />
+    <>
       <h1>Projects Content</h1>
-    </section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, odio?</p>
+      <section className='projects_section'>
+        <div className="project_image"></div>
+        <div className="project_resume">
+          <a href="/project">Pico Project</a>
+          <ul>
+            <li>laravel</li>
+            <li>typescript</li>
+            <li>mysql</li>
+          </ul>
+          <button className='btn_project'></button>
+        </div>
+      </section>
+    </>
   );
 }
 

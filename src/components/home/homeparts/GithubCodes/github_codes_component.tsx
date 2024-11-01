@@ -1,3 +1,5 @@
+import "./github_codes.css"
+
 function Github_Codes() {
   return (
     <div className="github_codes">

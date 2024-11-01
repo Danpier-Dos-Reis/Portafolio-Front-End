@@ -1,3 +1,5 @@
+import "./home_articles.css"
+
 function Home_Articles() {
     return (
       <div className="home_articles">

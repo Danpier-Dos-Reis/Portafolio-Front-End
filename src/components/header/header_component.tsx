@@ -1,3 +1,4 @@
+import "./header.css"
 import { Link } from "react-router-dom";
 
 interface Main_Header_Properties{
@@ -13,9 +14,9 @@ function Main_Header(props:Main_Header_Properties) {
         <Link to="/" className="myname">Danpier</Link>
         <div className="links_container">
           <Link to="/projects">PROJECTS</Link>
-          <a href="#">WORK</a>
-          <a href="#">ARTICLES</a>
-          <a href="#">CONTACT</a>
+          <Link to="#">WORK</Link>
+          <Link to="#">ARTICLES</Link>
+          <Link to="#">CONTACT</Link>
         </div>
       </div>
     </header>

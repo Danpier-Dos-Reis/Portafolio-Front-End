@@ -1,0 +1,80 @@
+.presentation_card {
+  margin-top: 1cm;
+  background: #F4F6FF;
+  width: 100%;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.219);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.presentation_card p:first-child {
+  width: 90%;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 1cm 0 1cm 5%;
+}
+
+.presentation_card p:nth-child(2) {
+  width: 80%;
+  font-size: 25px;
+  margin: 0 0 1cm 5%;
+}
+.presentation_card p:nth-child(2) a {
+  text-decoration: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.underline_blue {
+  text-decoration: underline;
+  text-decoration-color: lightblue;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+.underline_red {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+.underline_darkblue {
+  text-decoration: underline;
+  text-decoration-color: #10375C;
+  text-underline-offset: 8px; /* Distancia entre el texto y la línea */
+  text-decoration-thickness: 5px; /* Grosor del subrayado */
+}
+
+@media screen and (max-width: 1050px) {
+  .presentation_card {
+    margin-top: 3.5cm;
+  }
+}
+@media screen and (max-width: 834px) {
+  .presentation_card p:first-child {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .presentation_card p:first-child {
+    font-size: 27px;
+  }
+  .presentation_card p:nth-child(2) {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .underline_blue {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+  .underline_red {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+  .underline_darkblue {
+    text-decoration-thickness: 3px; /* Grosor del subrayado */
+  }
+}

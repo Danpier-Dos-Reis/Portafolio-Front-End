@@ -1,3 +1,5 @@
+import "./my_description.css"
+
 function My_Description() {
 
   return (
