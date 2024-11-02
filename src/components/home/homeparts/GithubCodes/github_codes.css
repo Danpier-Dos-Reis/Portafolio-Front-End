@@ -1,38 +1,42 @@
 .github_codes {
   width: 100%;
-  margin-top: 1.6cm;
 }
-.github_codes .ti_code p {
-  font-size: 45px;
-}
-.github_codes .cards_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.github_codes .cards_container .project_card {
-  margin: 0.5cm 0 1cm 0;
-  background: #F4F6FF;
-  border: solid 0.5px gray;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
-  border-radius: 15px;
-  width: 30%;
-  height: 380px;
-}
-.github_codes .cards_container .project_card p:first-child {
-  margin: 1cm 0 0.3cm 10%;
-  font-weight: bold;
-}
-.github_codes .cards_container .project_card p, .github_codes .cards_container .project_card a {
-  width: 80%;
-  margin-left: 10%;
-  font-size: 16px;
-}
-.github_codes .cards_container .project_card .programming_languages {
+  .ti_code h1 {
+      font-size: 45px;
+      font-weight: normal;
+  }
+  .cards_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .project_card {
+    margin: 0.5cm 0 1cm 0;
+    background: #F4F6FF;
+    border: solid 0.5px gray;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.219);
+    border-radius: 15px;
+    width: 30%;
+    height: 380px;
+  }
+  .project_card p:first-child {
+    margin: 1cm 0 0.3cm 10%;
+    font-weight: bold;
+  }
+  .project_card a {
+    color: #0000EE;
+  }
+  .project_card p, .project_card a {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
+  }
+
+.programming_languages {
   margin: 0.4cm 0 0 0;
   border-top: solid 1px gray;
 }
-.github_codes .cards_container .project_card .cont_circles {
+.cont_circles {
   width: 90%;
   margin: 10% 0 10% 0;
   display: flex;
@@ -42,20 +46,20 @@
   row-gap: 10px;
   padding-left: 7%;
 }
-.github_codes .cards_container .project_card .cont_circles .cir {
-  display: inline-flex;
-}
-.github_codes .cards_container .project_card .cont_circles .cir div {
-  border-radius: 50%;
-  border: solid 1.5px black;
-  width: 16px;
-  height: 16px;
-}
-.github_codes .cards_container .project_card .cont_circles .cir p {
-  font-size: 14px;
-  margin: 0 10px 0 4px;
-  width: fit-content;
-}
+  .cir {
+    display: inline-flex;
+  }
+    .cir div {
+      border-radius: 50%;
+      border: solid 1.5px black;
+      width: 16px;
+      height: 16px;
+    }
+    .cir p {
+      font-size: 14px;
+      margin: 0 10px 0 4px;
+      width: fit-content;
+    }
 
 @media screen and (max-width: 1366px) {
   .project_card {

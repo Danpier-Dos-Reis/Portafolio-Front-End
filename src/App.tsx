@@ -3,6 +3,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Home from './components/home/home_component';
 import Projects from './components/projects/projects_component';
 import Main_Header from './components/header/header_component';
+import Works from './components/work/work_component';
+import Articles from './components/articles/articles_component';
+import ContactForm from './components/contact/contact_component';
 
 const router_one = createBrowserRouter([
   {
@@ -15,7 +18,10 @@ const router_one = createBrowserRouter([
     errorElement: <h1>Error 404</h1>,
     children:[
       {path:"/", element: <Home/>},
-      {path:"/projects", element: <Projects/>}
+      {path:"/proyectos", element: <Projects/>},
+      {path:"/trabajos", element: <Works/>},
+      {path:"/articulos", element: <Articles/>},
+      {path:"/contacto", element: <ContactForm/>}
     ]
   }
 ]);

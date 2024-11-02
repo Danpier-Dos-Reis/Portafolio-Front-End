@@ -4,12 +4,12 @@ function Github_Codes() {
   return (
     <div className="github_codes">
         <div className="ti_code">
-            <p>Código - <span style={{ fontSize: '12px' }}>*Falta hacerle responsive, las animaciones u la imágenes*</span></p>
+            <h1>Código</h1>
         </div>
         <div className="cards_container">
             <div className="project_card">
-                <p>Github Project Name</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit, animi perspiciatis error sint sapiente.</p>
+                <p>Wordpress Ecommerce</p>
+                <p>Tienda virtual donde se venden artículos relacionados al skateboarding.</p>
                 <br/><br/>
                 <a href="#github_project1">Ver Repo</a>
                 <div className="programming_languages">
@@ -22,8 +22,8 @@ function Github_Codes() {
                 </div>
             </div>
             <div className="project_card">
-                <p>Github Project Name</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit, animi perspiciatis error sint sapiente.</p>
+                <p>Rapi Job</p>
+                <p>Aplicación web que puedes usar para buscar empleo de forma automática en las páginas más conocidas.</p>
                 <br/><br/>
                 <a href="#github_project2">Ver Repo</a>
                 <div className="programming_languages">
@@ -31,8 +31,8 @@ function Github_Codes() {
                 </div>
             </div>
             <div className="project_card">
-                <p>Github Project Name</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit, animi perspiciatis error sint sapiente.</p>
+                <p>Café Uruguay</p>
+                <p>Página de presentación para una cafetería.</p>
                 <br/><br/>
                 <a href="#github_project3">Ver Repo</a>
                 <div className="programming_languages">

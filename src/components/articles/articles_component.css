@@ -1,5 +1,6 @@
 .home_articles {
   width: 100%;
+  margin-top: 1.6cm;
 }
 .home_articles .ti_articles p {
   font-size: 45px;
@@ -41,4 +42,10 @@
 .home_articles .arts_container .art_calltoread {
   text-decoration: none;
   color: #0000EE;
+}
+
+@media screen and (max-width: 1024px) {
+    .home_articles{
+        margin-top: 3.5cm;
+    }
 }

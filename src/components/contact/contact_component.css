@@ -1,0 +1,12 @@
+.contact_section {
+  width: 100%;
+  margin-top: 1.6cm;
+}
+    .ti_div{
+        margin: 0 0 1cm 0;
+    }
+    .ti_div h1 {
+      font-size: 45px;
+      margin-bottom: 0.5cm;
+      font-weight: normal;
+    }
