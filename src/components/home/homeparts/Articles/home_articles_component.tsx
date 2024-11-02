@@ -4,7 +4,7 @@ function Home_Articles() {
     return (
       <div className="home_articles">
           <div className="ti_articles">
-              <p>Artículos - <span style={{ fontSize: '12px' }}>*Falta hacerle responsive, las animaciones u la imágenes*</span></p>
+              <p>Artículos</p>
           </div>
           <div className="arts_container">
             <a href="#article" className="ti_article">I'm Dad!</a>

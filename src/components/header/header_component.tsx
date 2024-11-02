@@ -14,9 +14,9 @@ function Main_Header(props:Main_Header_Properties) {
         <Link to="/" className="myname">Danpier</Link>
         <div className="links_container">
           <Link to="/projects">PROJECTS</Link>
-          <Link to="#">WORK</Link>
-          <Link to="#">ARTICLES</Link>
-          <Link to="#">CONTACT</Link>
+          <Link to="/works">WORK</Link>
+          <Link to="/articles">ARTICLES</Link>
+          <Link to="/contact">CONTACT</Link>
         </div>
       </div>
     </header>

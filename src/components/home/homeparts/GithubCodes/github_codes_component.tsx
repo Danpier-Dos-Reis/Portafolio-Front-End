@@ -4,7 +4,7 @@ function Github_Codes() {
   return (
     <div className="github_codes">
         <div className="ti_code">
-            <p>Código - <span style={{ fontSize: '12px' }}>*Falta hacerle responsive, las animaciones u la imágenes*</span></p>
+            <h1>Código</h1>
         </div>
         <div className="cards_container">
             <div className="project_card">
