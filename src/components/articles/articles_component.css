@@ -2,8 +2,9 @@
   width: 100%;
   margin-top: 1.6cm;
 }
-.home_articles .ti_articles p {
-  font-size: 45px;
+.home_articles .ti_articles h1 {
+  font-weight: bold;
+  font-size: 40px;
   margin-bottom: 0.5cm;
 }
 .home_articles .arts_container {

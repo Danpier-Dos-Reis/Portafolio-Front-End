@@ -5,7 +5,7 @@ function Articles() {
   return (
     <div className="home_articles">
         <div className="ti_articles">
-            <p>Artículos</p>
+            <h1>Artículos</h1>
         </div>
         <div className="arts_container">
           <a href="#article" className="ti_article">I'm Dad!</a>

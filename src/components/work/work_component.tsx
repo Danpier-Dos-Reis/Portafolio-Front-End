@@ -4,7 +4,7 @@ function Works() {
 
   return (
     <>
-      <h1>Works Content</h1>
+      <h1>Mis trabajos</h1>
       <p className="w_init">Lorem ipsum dolor Animi, odio?</p>
       <section className='works_section'>
         <div className="work_image">

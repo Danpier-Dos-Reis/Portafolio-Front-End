@@ -30,9 +30,8 @@ header .main_menu .links_container {
 }
 header .main_menu .links_container a {
   text-decoration: none;
-  font-size: 18px;
-  color: gray;
-  font-weight: bold;
+  font-size: 20px;
+  color: #666666;
 }
 header .main_menu .links_container a:hover {
   transition-duration: 0.5s;

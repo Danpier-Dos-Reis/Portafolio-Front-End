@@ -9,10 +9,13 @@ function ContactForm() {
             <p>Puedo sumarle a tu equipo de trabajo más que una mejora en la productividad.</p>
         </div>
         <form action="" method="POST">
+            <label htmlFor="name" >Nombre</label> <label htmlFor="email">Email</label>
             <input type="text" name="inp_name" id="name" /> <input type="email" name="inp_email" id="email" />
+            <label htmlFor="subject">Título</label>
             <input type="text" name="inp_subject" id="subject" />
-            <input type="text" name="inp_message" id="message" />
-            <input type="submit" value="Send Message" />
+            <label htmlFor="message">Mensaje</label>
+            <textarea placeholder="Escribe aquí..." id="message" />
+            <input type="submit" value="Enviar" id="btnsubmit"/>
         </form>
     </section>
   );

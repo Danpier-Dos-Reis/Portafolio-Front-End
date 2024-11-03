@@ -6,7 +6,31 @@
         margin: 0 0 1cm 0;
     }
     .ti_div h1 {
-      font-size: 45px;
+      font-size: 40px;
       margin-bottom: 0.5cm;
-      font-weight: normal;
+      font-weight: bold;
     }
+
+    form{
+      display: grid;
+      grid-template-columns: repeat(28,1fr);
+      grid-template-rows: repeat(18,1fr);
+    }
+      form label{margin-left: 10px; color: #666666; font-size: 24px;} form input{ border-radius: 10px; border: solid #666666 3px; padding-left: 10px; }
+      label[for="name"]{ grid-column: 1/13; grid-row: 1/2; } label[for="name"]::after{content: " *"; color: red; font-size: 18px;}
+      label[for="email"]{ grid-column: 17/29; grid-row: 1/2; } label[for="email"]::after{content: " *"; color: red; font-size: 18px;}
+      #name{grid-column: 1/13; grid-row: 2/4;}
+      #email{grid-column: 17/29; grid-row: 2/4;}
+      label[for="subject"]{ grid-column: 1/13; grid-row: 5/6; } label[for="subject"]::after{content: " *"; color: red; font-size: 18px;}
+      #subject{grid-column: 1/29; grid-row: 6/8;}
+      label[for="message"]{ grid-column: 1/13; grid-row: 9/10; } label[for="message"]::after{content: " *"; color: red; font-size: 18px;}
+      #message{
+        grid-column: 1/29; grid-row: 10/15;
+        font-size: 24px;
+        border-radius: 10px;
+        border: solid #666666 3px;
+        padding-left: 10px;
+        line-height: 2;
+      }
+      #message:focus{ line-height: 1.5;}
+      #btnsubmit{ grid-column: 13/17; grid-row: 16/17; font-size: 24px; color: #0000ee;}
