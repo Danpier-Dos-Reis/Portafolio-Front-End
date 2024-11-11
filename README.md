@@ -7,8 +7,8 @@ This project is my front end portfolio
 * Artículos
 
     ```sql
-    CREATE TABLE dan_articulo(
-        id INT PRIMARY KEY NOT NULL,
+    CREATE TABLE dan_articulos(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         titulo VARCHAR(50) NOT NULL,
         descripcion VARCHAR(300) NOT NULL,
         categoria VARCHAR(300) NOT NULL,
@@ -19,8 +19,8 @@ This project is my front end portfolio
 * Repositorios github
 
     ```sql
-    CREATE TABLE dan_project(
-        id INT  NOT NULL PRIMARY KEY,
+    CREATE TABLE dan_projects(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         github_link TEXT NOT NULL,
         titulo VARCHAR(50) NOT NULL,
         descripcion VARCHAR(300) NOT NULL,
@@ -31,8 +31,8 @@ This project is my front end portfolio
 * Proyectos
 
     ```sql
-    CREATE TABLE dan_work(
-        id INT NOT NULL PRIMARY KEY,
+    CREATE TABLE dan_works(
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
         image_link TEXT NOT NULL,
         titulo VARCHAR(50) NOT NULL,
         descripcion VARCHAR(300) NOT NULL,
