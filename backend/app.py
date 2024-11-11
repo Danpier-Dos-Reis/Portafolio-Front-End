@@ -1,8 +1,14 @@
-from flask import Flask, request
+from flask import Flask
+from flask_cors import CORS
 import business_logic_lawyer as bll
 
 
 app = Flask(__name__)
+
+#CORS(app)  # Permite todas las solicitudes de cualquier origen
+
+# Si quieres permitir solo desde un origen específico
+CORS(app, origins="http://localhost:5173")
 
 @app.route("/")
 def root():
