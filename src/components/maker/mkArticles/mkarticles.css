@@ -2,34 +2,33 @@
   width: 100%;
   margin-top: 1.6cm;
 }
-    /* .ti_div{
-        margin: 0 0 1cm 0;
-    }
-    .ti_div h1 {
-      font-size: 40px;
-      font-weight: bold;
-    } */
 
-    form{
+    .mkarticles_section form{
       display: grid;
-      grid-template-columns: repeat(28,1fr);
-      grid-template-rows: repeat(18,1fr);
+      grid-template-columns: repeat(29,1fr);
+      grid-template-rows: repeat(10,50px);
     }
-      form label{margin-left: 10px; color: #666666; font-size: 24px;} form input{ border-radius: 10px; border: solid #666666 3px; padding-left: 10px; }
-      label[for="name"]{ grid-column: 1/13; grid-row: 1/2; } label[for="name"]::after{content: " *"; color: red; font-size: 18px;}
-      label[for="email"]{ grid-column: 17/29; grid-row: 1/2; } label[for="email"]::after{content: " *"; color: red; font-size: 18px;}
-      #name{grid-column: 1/13; grid-row: 2/4;}
-      #email{grid-column: 17/29; grid-row: 2/4;}
-      label[for="subject"]{ grid-column: 1/13; grid-row: 5/6; } label[for="subject"]::after{content: " *"; color: red; font-size: 18px;}
-      #subject{grid-column: 1/29; grid-row: 6/8;}
-      label[for="message"]{ grid-column: 1/13; grid-row: 9/10; } label[for="message"]::after{content: " *"; color: red; font-size: 18px;}
-      #message{
-        grid-column: 1/29; grid-row: 10/15;
-        font-size: 24px;
+      .mkarticles_section form input{font-size: 16px;}
+      label[for="inp_title"]{ grid-column: 4/16; grid-row: 1/2; } label[for="inp_title"]::after{content: " *"; color: red; font-size: 18px;}
+      #inp_title{grid-column: 4/16; grid-row: 2/3;}
+
+      label[for="inp_category"]{ grid-column: 18/30; grid-row: 1/2; } label[for="inp_category"]::after{content: " *"; color: red; font-size: 18px;}
+      #inp_category{grid-column: 18/30; grid-row: 2/3;}
+
+      label[for="inp_description"]{ grid-column: 4/16; grid-row: 4/5; } label[for="inp_description"]::after{content: " *"; color: red; font-size: 18px;}
+      #inp_description{grid-column: 4/30; grid-row: 5/6;}
+
+      label[for="art_content"]{ grid-column: 4/16; grid-row: 7/8; } label[for="art_content"]::after{content: " *"; color: red; font-size: 18px;}
+      #art_content{
+        grid-column: 4/30; grid-row: 8/9;
+        font-size: 16px;
         border-radius: 10px;
         border: solid #666666 3px;
         padding-left: 10px;
         line-height: 2;
       }
-      #message:focus{ line-height: 1.5;}
-      #btnsubmit{ grid-column: 13/17; grid-row: 16/17; font-size: 24px; color: #0000ee;}
+      #art_content:focus{ line-height: 1.5;}
+      
+      #btn_postarticle{ grid-column: 12/18; grid-row: 10/11; font-size: 24px; color: #0000ee;}
+      #btn_postarticle:hover{ cursor: pointer;}
+      #btn_postarticle:active{ background: lightgreen;}

@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
 import business_logic_lawyer as bll
 
@@ -25,6 +25,12 @@ def getAllArticles():
 @app.route("/getallarticles/<art_id>")
 def getArticle(art_id):
     return bll.getArticle(art_id)
+
+@app.route("/mkarticle", methods=["POST"])
+def mkArticle():
+    data = request.get_json()  # Obtiene el JSON del body de la request
+    bll.saveArticle(data)
+    return "Artículo creado", 201  # Devuelve el mensaje con el código de estado 201 (creado)
 
 
 if __name__ == '__main__':

@@ -1,4 +1,5 @@
 import sqlite3
+from models import Article
 
 def getAllArticles():
     try:
@@ -130,6 +131,38 @@ def getTestData():
         # Guardar los cambios y cerrar la conexión
         conn.commit()
         conn.close()
+
+def saveArticle(art: Article) -> None:
+    try:
+        # Conectar a la base de datos (la crea si no existe)
+        conn = sqlite3.connect('./db_sqlite/mydatabase.db')
+        cursor = conn.cursor()
+
+        # Insertar los datos del objeto Article
+        cursor.execute('''
+            INSERT INTO dan_articulos (titulo, descripcion, categoria, contenido)
+            VALUES (?, ?, ?, ?)
+        ''', (art.title, art.description, art.category, art.content))
+
+        print("Artículo guardado correctamente.")
+
+    except sqlite3.OperationalError as e:
+        print("Error operacional:", e)
+    
+    except sqlite3.IntegrityError as e:
+        print("Error de integridad (por ejemplo, clave duplicada):", e)
+
+    except sqlite3.DatabaseError as e:
+        print("Error general de la base de datos:", e)
+
+    except sqlite3.Error as e:
+        print("Error desconocido en sqlite3:", e)
+
+    finally:
+        # Guardar los cambios y cerrar la conexión
+        conn.commit()
+        conn.close()
+    
 
 # def insertTestData():
 #     try:
