@@ -8,6 +8,8 @@ import Articles from './components/articles/articles_component';
 import ContactForm from './components/contact/contact_component';
 import Make_Articles from './components/maker/mkArticles/mkarticles_component';
 import TestPythonAPI from './components/test_api_connection/test_api_connection_component';
+import AddGithubProject from './components/maker/mkGithubProjects/mkgithubprojects';
+import AddWork from './components/maker/mkTrabajos/mktrabajos';
 
 const router_one = createBrowserRouter([
   {
@@ -24,7 +26,9 @@ const router_one = createBrowserRouter([
       {path:"/trabajos", element: <Works/>},
       {path:"/articulos", element: <Articles/>},
       {path:"/contacto", element: <ContactForm/>},
-      {path:"/mk-articles", element: <Make_Articles/>},
+      {path:"/mk-article", element: <Make_Articles/>},
+      {path:"/add-github-project", element: <AddGithubProject/>},
+      {path:"/add-work", element: <AddWork/>},
       {path:"/python", element: <TestPythonAPI/>}
     ]
   }

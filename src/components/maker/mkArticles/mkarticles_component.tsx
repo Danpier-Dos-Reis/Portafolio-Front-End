@@ -4,20 +4,20 @@ import { useState } from "react";
 function Make_Articles() {
 
   // Estados para capturar los valores de los campos
-  const [title, setTitle]:any = useState("");
-  const [category, setCategory]:any = useState("");
-  const [description, setDescription]:any = useState("");
-  const [content, setContent]:any = useState("");
+  const [titulo, setTitulo]:any = useState("");
+  const [categoria, setCategoria]:any = useState("");
+  const [descripcion, setDescripcion]:any = useState("");
+  const [contenido, setContenido]:any = useState("");
 
   const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Construye el JSON a partir de los valores de los estados
     const articleData = {
-          title: title,
-          category: category,
-          description: description,
-          content: content
+          titulo: titulo,
+          categoria: categoria,
+          descripcion: descripcion,
+          contenido: contenido
          };
   
     try {
@@ -33,7 +33,7 @@ function Make_Articles() {
          if (response.ok) {
             // const result:string = await String(response.body);
             // if(window.confirm("Artículo se guardó?")){console.log(response);}
-            window.prompt("articulo guadado");
+            window.confirm("articulo guardado");
          } else {
             console.error("Error al enviar el artículo");
          }
@@ -49,16 +49,16 @@ function Make_Articles() {
         </div>
         <form onSubmit={handleSubmit}>
             <label htmlFor="inp_title" >Título</label>
-            <input type="text" name="inp_title" id="inp_title" value={title} onChange={(e) => setTitle(e.target.value)}/>
+            <input type="text" name="inp_title" id="inp_title" value={titulo} onChange={(e) => setTitulo(e.target.value)}/>
 
             <label htmlFor="inp_category">Categoría</label>
-            <input type="text" name="inp_category" id="inp_category" value={category} onChange={(e) => setCategory(e.target.value)}/>
+            <input type="text" name="inp_category" id="inp_category" value={categoria} onChange={(e) => setCategoria(e.target.value)}/>
 
             <label htmlFor="inp_description">Descripción</label>
-            <input type="text" name="inp_description" id="inp_description" value={description} onChange={(e) => setDescription(e.target.value)}/>
+            <input type="text" name="inp_description" id="inp_description" value={descripcion} onChange={(e) => setDescripcion(e.target.value)}/>
 
             <label htmlFor="art_content">Mensaje</label>
-            <textarea placeholder="Escribe aquí..." id="art_content" value={content} onChange={(e) => setContent(e.target.value)}/>
+            <textarea placeholder="Escribe aquí..." id="art_content" value={contenido} onChange={(e) => setContenido(e.target.value)}/>
 
             <input type="submit" value="Enviar" id="btn_postarticle"/>
         </form>

@@ -30,7 +30,19 @@ def getArticle(art_id):
 def mkArticle():
     data = request.get_json()  # Obtiene el JSON del body de la request
     bll.saveArticle(data)
-    return "Artículo creado", 201  # Devuelve el mensaje con el código de estado 201 (creado)
+    return "Artículo Creado", 201  # Devuelve el mensaje con el código de estado 201 (creado)
+
+@app.route("/addgithubproject", methods=["POST"])
+def addgithubProject():
+    data = request.get_json()  # Obtiene el JSON del body de la request
+    bll.addGithubProject(data)
+    return "Proyecto Creado", 201  # Devuelve el mensaje con el código de estado 201 (creado)
+
+@app.route("/addwork", methods=["POST"])
+def addWork():
+    data = request.get_json()  # Obtiene el JSON del body de la request
+    bll.addWork(data)
+    return "Trabajo Creado", 201  # Devuelve el mensaje con el código de estado 201 (creado)
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 import json
 from flask import jsonify
 import data_access_lawyer as dal
-from models import Article
+from models import Article, GithubProject,Work
 
 def getTestData():
     return jsonify(dal.getTestData())
@@ -13,7 +13,13 @@ def getArticle(art_id):
     return jsonify(dal.getArticle(art_id))
 
 def saveArticle(jsonArticle):
-    stringData = json.dumps(jsonArticle)
-    data = json.loads(stringData)
-    article = Article(**data) # Crear una instancia de Articulo
+    article = Article(**jsonArticle) # Crear una instancia de Articulo
     dal.saveArticle(article)
+
+def addGithubProject(jsonGihubProject):
+    gitproj = GithubProject(**jsonGihubProject) # Crear una instancia de Articulo
+    dal.addGihubProject(gitproj)
+
+def addWork(jsonWork):
+    w = Work(**jsonWork) # Crear una instancia de Articulo
+    dal.addWork(w)

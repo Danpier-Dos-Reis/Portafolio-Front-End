@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-11-11T06:36:47.607Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="HWeGOpiEkmQ9Rh_aoZjp" version="24.6.4" type="device">
+<mxfile host="Electron" modified="2024-11-16T17:24:54.959Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="MraabXl5IwfGF9vrNO_Z" version="24.6.4" type="device">
   <diagram name="Page-1" id="a8RFTiZ0xdz1UtsjQKAN">
-    <mxGraphModel dx="1183" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="811" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -138,8 +138,8 @@
         <mxCell id="ubVi9tjZ42XdAKql5at5-16" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;spacing=0;" parent="1" vertex="1">
           <mxGeometry x="870" y="117.5" width="100" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="ubVi9tjZ42XdAKql5at5-17" value="POST: /articles/upload" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="850" y="187.5" width="140" height="30" as="geometry" />
+        <mxCell id="ubVi9tjZ42XdAKql5at5-17" value="POST: /mkarticle" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;html=1;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="865" y="187.5" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ubVi9tjZ42XdAKql5at5-43" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#B09500;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;fillColor=#e3c800;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="995" y="135" width="70" height="70" as="geometry" />
