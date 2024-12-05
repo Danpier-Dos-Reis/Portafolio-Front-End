@@ -10,6 +10,7 @@ app = Flask(__name__)
 # Si quieres permitir solo desde un origen específico
 CORS(app, origins="http://localhost:5173")
 
+#=====Get data=====
 @app.route("/")
 def root():
     return "You're Welcome"
@@ -25,6 +26,12 @@ def getAllArticles():
 @app.route("/getallarticles/<art_id>")
 def getArticle(art_id):
     return bll.getArticle(art_id)
+
+@app.route("/getallprojects")
+def getAllProjects():
+    return bll.getAllProjects()
+
+#=====Get data=====
 
 @app.route("/mkarticle", methods=["POST"])
 def mkArticle():
