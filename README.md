@@ -25,6 +25,7 @@ This project is my front end portfolio
         titulo VARCHAR(50) NOT NULL,
         descripcion VARCHAR(300) NOT NULL,
         tecnologias VARCHAR(100) NOT NULL,
+        <!-- contenido TEXT NOT NULL, -->
         github_link TEXT NOT NULL,
         image_link TEXT NOT NULL
     );
@@ -35,9 +36,9 @@ This project is my front end portfolio
     ```sql
     CREATE TABLE dan_works(
         id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-        image_link TEXT NOT NULL,
         titulo VARCHAR(50) NOT NULL,
         descripcion VARCHAR(300) NOT NULL,
-        tecnologias VARCHAR(100) NOT NULL
+        tecnologias VARCHAR(100) NOT NULL,
+        image_link TEXT NOT NULL
     );
     ```

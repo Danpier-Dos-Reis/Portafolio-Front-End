@@ -132,7 +132,6 @@ def getTestData():
         conn.commit()
         conn.close()
 
-
 def getAllProjects():
     try:
         conn = sqlite3.connect('./db_sqlite/mydatabase.db')
@@ -176,6 +175,47 @@ def getAllProjects():
         conn.commit()
         conn.close()
 
+def getAllWorks():
+    try:
+        conn = sqlite3.connect('./db_sqlite/mydatabase.db')
+        cursor = conn.cursor()
+
+        # Crear tablas
+        cursor.execute('''SELECT * FROM dan_works;''')
+        
+        # Obtener todos los resultados de la consulta
+        rows = cursor.fetchall()
+
+        # Crear una lista de diccionarios para almacenar los datos
+        works = []
+        for row in rows:
+            work = {
+                "id": row[0],
+                "titulo": row[1],
+                "descripcion": row[2],
+                "tecnologias": row[3],
+                "image_link": row[4]
+            }
+            works.append(work)
+        
+        return works
+    
+    except sqlite3.OperationalError as e:
+        print("Error operacional:", e)
+    
+    except sqlite3.IntegrityError as e:
+        print("Error de integridad (por ejemplo, clave duplicada):", e)
+
+    except sqlite3.DatabaseError as e:
+        print("Error general de la base de datos:", e)
+
+    except sqlite3.Error as e:
+        print("Error desconocido en sqlite3:", e)
+
+    finally:
+        # Guardar los cambios y cerrar la conexión
+        conn.commit()
+        conn.close()
 #=====Get data=====
 
 

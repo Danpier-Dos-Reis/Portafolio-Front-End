@@ -33,7 +33,7 @@ function Projects() {
               <img src={prj.Image_Link} alt="current_image" />
             </div>
             <div className="project_resume">
-              <a href={prj.Github_Link} target="_blank" className="project_title">Wordpress Ecommerce</a>
+              <a href={prj.Github_Link} target="_blank" className="project_title">{prj.Titulo}</a>
               <p>{prj.Descripcion}</p>
               <ul>
                 {/* Crear las etiquetas <li> dinámicamente */}

@@ -31,6 +31,9 @@ def getArticle(art_id):
 def getAllProjects():
     return bll.getAllProjects()
 
+@app.route("/getallworks")
+def getAllWorks():
+    return bll.getAllWorks()
 #=====Get data=====
 
 @app.route("/mkarticle", methods=["POST"])

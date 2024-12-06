@@ -34,13 +34,13 @@ class GithubProject:
     
 class Work:
     def __init__(self, image_link, titulo, descripcion, tecnologias):
-        self.image_link = image_link
         self.titulo = titulo
         self.descripcion = descripcion
         self.tecnologias = tecnologias
+        self.image_link = image_link
 
     # Serializador personalizado
     def work_to_dict(obj):
         if isinstance(obj, Work):
-            return {"link": obj.image_link, "titulo": obj.titulo, "descripcion": obj.descripcion, "tecnologias": obj.tecnologias}
+            return {"titulo": obj.titulo, "descripcion": obj.descripcion, "tecnologias": obj.tecnologias, "image_link": obj.image_link}
         raise TypeError("El objeto no es serializable")
