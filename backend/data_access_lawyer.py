@@ -194,7 +194,9 @@ def getAllWorks():
                 "titulo": row[1],
                 "descripcion": row[2],
                 "tecnologias": row[3],
-                "image_link": row[4]
+                "image_link": row[4],
+                "contenido": row[5],
+                "fecha": row[6],
             }
             works.append(work)
         

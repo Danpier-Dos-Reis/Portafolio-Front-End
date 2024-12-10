@@ -10,7 +10,10 @@
 .home_articles .arts_container {
   border-bottom: solid 2.5px gray;
   font-size: 19px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+}
+.home_articles .arts_container:nth-child(n+3) {
+  margin-top: 1.4cm;
 }
 .home_articles .arts_container .ti_article {
   font-size: 35px;

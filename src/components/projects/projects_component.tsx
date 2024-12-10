@@ -28,7 +28,7 @@ function Projects() {
       <p className="p_init">Proyectos en los que he participado</p>
       <section className='projects_section'>
         {projects.map((prj)=>(
-          <Fragment key={prj.Id}>
+          <div className="project" key={prj.Id}>
             <div className="project_image">
               <img src={prj.Image_Link} alt="current_image" />
             </div>
@@ -44,7 +44,7 @@ function Projects() {
               </ul>
               <a href={prj.Github_Link} target="_blank" className='btn_project'>Look</a>
             </div>
-          </Fragment>
+          </div>
         ))}
       </section>
     </>

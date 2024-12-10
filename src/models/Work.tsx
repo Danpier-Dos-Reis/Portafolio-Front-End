@@ -11,6 +11,8 @@ export interface WorkApiResponse {
     descripcion: string;
     tecnologias: string;
     image_link: string;
+    contenido: string;
+    fecha: string;
   }
   
   export class Work{
@@ -19,12 +21,16 @@ export interface WorkApiResponse {
       public Descripcion?: string;
       public Tecnologias?: string;
       public Image_Link?: string;
+      public Contenido?: string;
+      public Fecha?: string;
   
-      constructor(id:number,titulo:string,descripcion:string,tecnologias:string,image_link:string){
+      constructor(id:number,titulo:string,descripcion:string,tecnologias:string,image_link:string,contenido:string,fecha:string){
           this.Id = id;
           this.Titulo = titulo;
           this.Descripcion = descripcion;
           this.Tecnologias = tecnologias;
           this.Image_Link = image_link;
+          this.Contenido = contenido;
+          this.Fecha = fecha;
       }
   }
