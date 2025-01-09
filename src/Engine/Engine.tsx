@@ -3,7 +3,7 @@ import { Project,ProjectApiResponse } from "../models/Project";
 import { Work, WorkApiResponse } from "../models/Work";
 
 class Engine {
-   /**
+  /**
   * Convierte un JSON en un modelo Articulo
   * @param {Array} jsonData - Datos JSON provenientes de la API
   * @returns {Articulo[]} - Lista de instancias del modelo Articulo

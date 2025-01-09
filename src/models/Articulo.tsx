@@ -30,4 +30,16 @@ export class Articulo{
         this.Contenido = contenido;
         this.Fecha = fecha;
     }
+
+    /*// Método estático para convertir un JSON a una instancia de la clase
+    public fromJson(json: ArticuloApiResponse): Articulo {
+      return new Articulo(
+        json.id,
+        json.titulo,
+        json.descripcion,
+        json.categoria,
+        json.contenido,
+        json.fecha
+      );
+    }*/
 }
