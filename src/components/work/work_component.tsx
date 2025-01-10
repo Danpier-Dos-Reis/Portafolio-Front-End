@@ -11,7 +11,7 @@ function Works() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:5000/getallworks');
+      const response = await fetch('http://159.203.117.167:8000/getallworks');
       const result:WorkApiResponse[] = await response.json();
       console.log(result);
       setWorks(Engine.parseWorks(result));

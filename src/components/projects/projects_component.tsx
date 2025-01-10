@@ -9,7 +9,7 @@ function Projects() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://localhost:5000/getallprojects');
+      const response = await fetch('http://159.203.117.167:8000/getallprojects');
       const result:ProjectApiResponse[] = await response.json();
       setProjects(Engine.parseProjects(result));
     };

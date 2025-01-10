@@ -10,7 +10,7 @@ function Singular_Work() {
     useEffect(() => {
       // Obtener articulo de la API
       const fetchData = async () => {
-        const response = await fetch(`http://localhost:5000/getallworks/${id}`);
+        const response = await fetch(`http://159.203.117.167:8000/getallworks/${id}`);
         const result: WorkApiResponse[] = await response.json();
         console.log(result);
         setWorks(Engine.parseWorks(result));

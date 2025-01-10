@@ -11,7 +11,7 @@ function Articles() {
   useEffect(() => {
     //Obtener articulos de la API
     const fetchData = async () => {
-      const response = await fetch('http://localhost:5000/getallarticles');
+      const response = await fetch('http://159.203.117.167:8000/getallarticles');
       const result:ArticuloApiResponse[] = await response.json();
       setArticulos(Engine.parseArticles(result));
     };

@@ -10,7 +10,7 @@ function Singular_Article() {
   useEffect(() => {
     // Obtener articulo de la API
     const fetchData = async () => {
-      const response = await fetch(`http://localhost:5000/getallarticles/${id}`);
+      const response = await fetch(`http://159.203.117.167:8000/getallarticles/${id}`);
       const result: ArticuloApiResponse[] = await response.json();
       setArticulos(Engine.parseArticles(result));
     };
