@@ -24,7 +24,10 @@
     }
 
 @media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 414px) {
+  .rrss_container{
+    flex-direction: column;
+  }
+  .rrss_container a:first-child{
+    margin-bottom: 1cm;
+  }
 }

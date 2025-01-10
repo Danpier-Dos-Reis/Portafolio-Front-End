@@ -17,7 +17,7 @@ VALUES
     'Me uní a este maravilloso equipo de trabajo en el cual ejercí el cargo de desarrollador jr',
     'C#, SQL Server, Crystal Report',
     'https://i.ytimg.com/vi/XvIw6mQ8kPs/maxresdefault.jpg',
-    '<p>Contenido del trabajo Hispatec Chile</p>',
+    '<p>En esta oportunidad me uní al equipo de Producto📦 como Desarrollador JR FullStack donde era responsable de desarrollar el módulo de contabilidad para chile para un producto de la empresa, manejar datos de multiples origenes (excel,json,xml,sql-server ...), consumir APIs de otros ERPs.</p>',
     '2025-01-10'
 );
 

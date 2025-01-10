@@ -7,6 +7,7 @@ function ContactForm() {
         <div className="ti_div">
             <h1>Contáctame</h1>
             <p>Puedo sumarle a tu equipo de trabajo más que una mejora en la productividad.</p>
+            <br />
             <span style={{fontWeight:"bold"}}>danpier_dr@hotmail.com</span>
         </div>
         <div className="rrss_container">
