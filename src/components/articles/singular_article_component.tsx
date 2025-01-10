@@ -22,7 +22,7 @@ function Singular_Article() {
       {articulos && articulos.length > 0 ? (
         <>
           <h2>{articulos[0].Titulo}</h2>
-          <div dangerouslySetInnerHTML={{ __html: articulos[0].Contenido }} />
+          <div dangerouslySetInnerHTML={{ __html: articulos[0].Contenido as string }} />
         </>
       ) : (
         <p>Cargando artículo...</p>

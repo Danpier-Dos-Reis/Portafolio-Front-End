@@ -23,7 +23,7 @@ function Singular_Work() {
       {works && works.length > 0 ? (
         <div className="split_workcontainer">
           <h2>{works[0].Titulo}</h2>
-          <div dangerouslySetInnerHTML={{ __html: works[0].Contenido }} />
+          <div dangerouslySetInnerHTML={{ __html: works[0].Contenido as string }} />
         </div>
       ) : (
         <p>Cargando artículo...</p>
