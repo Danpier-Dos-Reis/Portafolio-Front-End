@@ -218,6 +218,53 @@ def getAllWorks():
         # Guardar los cambios y cerrar la conexión
         conn.commit()
         conn.close()
+
+def getWork(work_id):
+    try:
+        # Conectar a la base de datos (la crea si no existe)
+        conn = sqlite3.connect('./db_sqlite/mydatabase.db')
+        cursor = conn.cursor()
+
+
+        # Crear tablas
+        cursor.execute('''SELECT * FROM dan_works WHERE id = {};'''.format(work_id))
+        
+        # Obtener todos los resultados de la consulta
+        rows = cursor.fetchall()
+
+        # Crear una lista de diccionarios para almacenar los datos
+        works = []
+        for row in rows:
+            work = {
+                "id": row[0],
+                "titulo": row[1],
+                "descripcion": row[2],
+                "tecnologias": row[3],
+                "image_link": row[4],
+                "contenido": row[5],
+                "fecha": row[6]
+            }
+            works.append(work)
+        
+        return works
+    
+    except sqlite3.OperationalError as e:
+        print("Error operacional:", e)
+    
+    except sqlite3.IntegrityError as e:
+        print("Error de integridad (por ejemplo, clave duplicada):", e)
+
+    except sqlite3.DatabaseError as e:
+        print("Error general de la base de datos:", e)
+
+    except sqlite3.Error as e:
+        print("Error desconocido en sqlite3:", e)
+
+    finally:
+        # Guardar los cambios y cerrar la conexión
+        conn.commit()
+        conn.close()
+
 #=====Get data=====
 
 

@@ -43,7 +43,7 @@ function Works() {
                   <li key={index}>{tech}</li>
                 )) || <li>No technologies available</li>}
               </ul>
-              <Link to={`/trabajos/${wk.Id}`} className='btn_work' onClick={()=>{setHiden(!hiden)}}>Look</Link>
+              <Link to={`/trabajos/${wk.Id}`} className='btn_work' onClick={()=>{setHiden(!hiden)}}>Ver más</Link>
             </div>
           </div>
         ))}

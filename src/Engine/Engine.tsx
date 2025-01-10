@@ -54,7 +54,9 @@ class Engine {
           item.titulo,
           item.descripcion,
           item.tecnologias,
-          item.image_link
+          item.image_link,
+          item.contenido,
+          item.fecha
         )
     );
   }

@@ -18,6 +18,9 @@ def getAllProjects():
 
 def getAllWorks():
     return jsonify(dal.getAllWorks())
+
+def getWork(art_id):
+    return jsonify(dal.getWork(art_id))
 #=====Get data=====
 
 #=====Save data=====

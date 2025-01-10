@@ -47,3 +47,11 @@ VALUES
     <p>Con FastAPI y Pydantic, puedes devolver listas de objetos como JSON de forma rápida y ordenada.</p>',
     '2025-01-09'
 );
+
+/*
+INSERT INTO dan_articulos (titulo, descripcion, categoria, contenido, fecha)
+VALUES 
+('Artículo 1', 'Descripción del artículo 1', 'Categoría 1', 'Contenido del artículo 1', '2024-12-09'),
+('Artículo 2', 'Descripción del artículo 2', 'Categoría 2', 'Contenido del artículo 2', '2024-12-09'),
+('Artículo 3', 'Descripción del artículo 3', 'Categoría 3', 'Contenido del artículo 3', '2024-12-09');
+*/

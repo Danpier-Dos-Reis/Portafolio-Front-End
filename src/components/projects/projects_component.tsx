@@ -42,7 +42,7 @@ function Projects() {
                   )) || <li>No technologies available</li>
                 }
               </ul>
-              <a href={prj.Github_Link} target="_blank" className='btn_project'>Look</a>
+              <a href={prj.Github_Link} target="_blank" className='btn_project'>Ver más</a>
             </div>
           </div>
         ))}

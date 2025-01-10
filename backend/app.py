@@ -34,6 +34,10 @@ def getAllProjects():
 @app.route("/getallworks")
 def getAllWorks():
     return bll.getAllWorks()
+
+@app.route("/getallworks/<work_id>")
+def getWork(work_id):
+    return bll.getWork(work_id)
 #=====Get data=====
 
 @app.route("/mkarticle", methods=["POST"])
