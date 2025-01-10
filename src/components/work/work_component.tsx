@@ -11,7 +11,12 @@ function Works() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://159.203.117.167:8000/getallworks');
+      const response = await fetch('http://159.203.117.167:8000/getallworks', {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       const result:WorkApiResponse[] = await response.json();
       console.log(result);
       setWorks(Engine.parseWorks(result));
