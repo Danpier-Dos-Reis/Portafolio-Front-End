@@ -28,7 +28,7 @@ function Works() {
   return (
     <>
       <h1 className={hiden === true ? "":"no_display"}>Mis trabajos</h1>
-      <p className={`w_init ${hiden === true ? "":"no_display"}`}>Lorem ipsum dolor Animi, odio?</p>
+      {/* <p className={`w_init ${hiden === true ? "":"no_display"}`}>Lorem ipsum dolor Animi, odio?</p> */}
       <section className={`works_section ${hiden === true ? "":"no_display"}`}>
         {works.map((wk)=>(
           <div className="work" key={wk.Id}>
