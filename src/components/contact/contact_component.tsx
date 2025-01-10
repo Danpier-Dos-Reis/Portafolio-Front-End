@@ -7,16 +7,16 @@ function ContactForm() {
         <div className="ti_div">
             <h1>Contáctame</h1>
             <p>Puedo sumarle a tu equipo de trabajo más que una mejora en la productividad.</p>
+            <span style={{fontWeight:"bold"}}>danpier_dr@hotmail.com</span>
         </div>
-        <form action="" method="POST">
-            <label htmlFor="name" >Nombre</label> <label htmlFor="email">Email</label>
-            <input type="text" name="inp_name" id="name" /> <input type="email" name="inp_email" id="email" />
-            <label htmlFor="subject">Título</label>
-            <input type="text" name="inp_subject" id="subject" />
-            <label htmlFor="message">Mensaje</label>
-            <textarea placeholder="Escribe aquí..." id="message" />
-            <input type="submit" value="Enviar" id="btnsubmit"/>
-        </form>
+        <div className="rrss_container">
+          <a href="https://www.instagram.com/gaussian.cl/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="instagram"/>
+          </a>
+          <a href="https://www.linkedin.com/in/danpier-dos-reis-4b597119a/" target="_blank">
+            <img src="https://www.freepnglogos.com/uploads/linkedin-logo-hd-png-3.png" alt="instagram"/>
+          </a>
+        </div>
     </section>
   );
 }
