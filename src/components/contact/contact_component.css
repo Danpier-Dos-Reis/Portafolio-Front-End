@@ -1,0 +1,33 @@
+.contact_section {
+  width: 100%;
+  margin-top: 0.7cm;
+}
+    .ti_div{
+        margin: 0 0 1cm 0;
+    }
+    .ti_div h1 {
+      font-size: 40px;
+      margin-bottom: 0.5cm;
+      font-weight: bold;
+    }
+
+    .rrss_container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .rrss_container a img{
+      width: 250px;
+      height: 260px;
+    }
+
+@media screen and (max-width: 1024px) {
+  .rrss_container{
+    flex-direction: column;
+  }
+  .rrss_container a:first-child{
+    margin-bottom: 1cm;
+  }
+}

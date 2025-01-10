@@ -1,0 +1,81 @@
+header {
+  width: 100%;
+  height: 150px;
+  display: inline-flex;
+}
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+header .main_menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.7cm;
+}
+header .main_menu .myname {
+  text-decoration: none;
+  margin-top: 1.5cm;
+  font-size: 40px;
+  font-weight: bold;
+}
+header .main_menu .links_container {
+  margin-top: 0.5cm;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5cm;
+}
+header .main_menu .links_container a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #666666;
+}
+header .main_menu .links_container a:hover {
+  transition-duration: 0.5s;
+  color: #10375C;
+}
+
+.links_container a:nth-child(n+2) {
+  margin-left: 6%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_section {
+    width: 70%;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .main_menu {
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  header .main_menu .myname {
+    margin-top: 7px;
+  }
+  header .main_menu p {
+    margin-top: 0.5cm;
+  }
+  header .main_menu .links_container {
+    margin: 0.5cm 0 0 0;
+    justify-content: center;
+  }
+  .links_container a:nth-child(n+2) {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main_menu .links_container a:nth-child(n) {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main_menu .links_container a:nth-child(n) {
+    font-size: 12px;
+  }
+}

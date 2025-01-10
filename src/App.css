@@ -1,0 +1,16 @@
+.main_section {
+  margin: 1cm auto 1.7cm auto;
+  width: 70%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1050px) {
+  .main_section {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main_section {
+    width: 90%;
+  }
+}
