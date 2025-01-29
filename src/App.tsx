@@ -2,9 +2,6 @@ import './App.css'
 import React,{ Suspense } from 'react';
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Home from './components/home/home_component';
-// import Articles from './components/articles/articles_component';
-// import Projects from './components/projects/projects_component';
-// import Works from './components/work/work_component';
 import Singular_Article from './components/articles/singular_article_component';
 import Main_Header from './components/header/header_component';
 import ContactForm from './components/contact/contact_component';
