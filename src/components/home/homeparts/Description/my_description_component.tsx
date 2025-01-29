@@ -9,7 +9,7 @@ function My_Description() {
   <br/><br/>
   Actualmente vivo en Santiago de Chile.
   <br/><br/>
-  Sigueme en <a href="#instagram">Instagram</a> para ver mi contenido educativo.</p>
+  Sigueme en <a href="https://www.instagram.com/gaussian.cl/" target="_blank">Instagram</a> para ver mi contenido educativo.</p>
   </div>
   );
 }
